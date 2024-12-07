@@ -1,5 +1,0 @@
-Flask
-pandas
-matplotlib
-scikit-learn
-openpyxl
