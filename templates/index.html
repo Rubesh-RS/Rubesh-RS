@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vandal/Phantom data graphing and prediction</title>
+</head>
+<body>
+    <h1>Upload Your Excel File or Use Sample Data</h1>
+    <form action="/" method="post" enctype="multipart/form-data">
+        <label for="dataset">Choose dataset:</label>
+        <select name="dataset" id="dataset">
+            <option value="sample">Use Sample Data</option>
+            <option value="upload">Upload Your Own Excel</option>
+        </select>
+        <br><br>
+        <input type="file" name="file" id="file" accept=".xlsx">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if plot_url %}
+    <img src="{{ plot_url }}" alt="Plot" style="display: block; margin-top: 20px;">
+    {% endif %}
+</body>
+</html>

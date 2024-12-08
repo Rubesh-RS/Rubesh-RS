@@ -1,0 +1,7 @@
+flask
+pandas
+matplotlib
+os
+sklearn
+numpy
+datetime
