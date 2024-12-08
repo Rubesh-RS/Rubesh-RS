@@ -1,0 +1,116 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-image: url('/static/valorant_background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #00ff00;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+    margin: 20px;
+}
+
+.title, .subtitle {
+    font-size: 1.5em;
+    color: #00ff00;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 40px #00ff00, 0 0 80px #00ff00, 0 0 90px #00ff00, 0 0 100px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 50px #00ff00, 0 0 80px #00ff00, 0 0 100px #00ff00, 0 0 150px #00ff00;
+    }
+}
+
+.upload-form {
+    margin-bottom: 20px;
+    animation: slideUp 1s ease-in-out;
+}
+
+.custom-select, .custom-file-input, .submit-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1em;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #00ff00;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+    background-color: transparent;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.custom-select, .custom-file-input {
+    color: #00ff00;
+}
+
+.submit-button {
+    background-color: transparent;
+    color: #00ff00;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #00ff00;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.plot-container {
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.plot-image {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+.prediction {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
