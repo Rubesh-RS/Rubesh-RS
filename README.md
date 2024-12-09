@@ -1,4 +1,4 @@
-#👋 Hi, I’m @Rubesh-RS
+- 👋 Hi, I’m @Rubesh-RS
 - 👀 I’m interested to learn, contribute and share my skills and experience
 - 🌱 I’m currently working as a developer @TCS
 - 📫 How to reach me - rubesh10443@gmail.com
